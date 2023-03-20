@@ -28,7 +28,7 @@ if(clicked){
                 />
             </div>
             <div>
-                <button onClick={() => {setClicked(true)}} className=' text-black font-bold hover: cursor-pointer rounded  bg-[#00df9a] mt-3 py-2 px-5 mx-auto '>Get Started</button>
+                <button onClick={() => {setClicked(true)}} className='hover:bg-green-600 text-black font-bold hover: cursor-pointer rounded  bg-[#00df9a] mt-3 py-2 px-5 mx-auto '>Get Started</button>
             </div>
         </div>
     </div>
