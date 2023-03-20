@@ -63,6 +63,7 @@ const handleSubmit = (e) => {
             <span className='border py-2 px-4 rounded '>GitHub</span>
           </div>
         </div>
+
         <form onSubmit={handleSubmit}>
         
         <div className='h-[80vh] p-8 shadow-xl'>
@@ -73,19 +74,19 @@ const handleSubmit = (e) => {
           <div>
           <label className='block mb-2'>Username</label>
           <input type='text' value={username} onChange={(e) => setUsername(e.target.value)} placeholder='Enter Name' className='block w-full border rounded py-2 px-4 mb-4' />
-          {errors.username && <div className="error">{errors.username}</div>}
+          {errors.username && <div className="error bg-red-400 ">{errors.username}</div>}
           </div>
 
           <div>
           <label className='block mb-2'>Email</label>
           <input type='email' value={email} onChange={(e) => setEmail(e.target.value)} placeholder='Enter Email' className='block w-full border rounded py-2 px-4 mb-4' />
-          {errors.email && <div className="error">{errors.email}</div>}
+          {errors.email && <div className="error bg-red-400">{errors.email}</div>}
           </div>
 
           <div>
           <label className='block mb-2'>Password</label>
           <input type='password' value={password} onChange={(e) =>setPassword(e.target.value)} placeholder='Enter Password' className='block w-full border rounded py-2 px-4 mb-4' />
-          {errors.password && <div className="error">{errors.password}</div>}
+          {errors.password && <div className="error bg-red-400">{errors.password}</div>}
           </div>
           
           <div>
