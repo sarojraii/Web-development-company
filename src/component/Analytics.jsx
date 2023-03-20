@@ -1,7 +1,14 @@
 import React from 'react'
 import WebDev from '../assets/WebDev.jpg'
+import { Navigate } from 'react-router'
 
 const Analytics = () => {
+  const [goToContact, setGoToContact] = React.useState(false);
+  
+  if (goToContact){
+    return <Navigate to = "/Contact"/>
+    
+  }
   return (
     <div className='flex w-full bg-white py-16 px-4'>
         <div className=' max-w-[1240px] mx-auto grid md:grid-cols-2'>
@@ -13,7 +20,7 @@ const Analytics = () => {
              Our team of experienced developers can help you create a custom website that meets your unique needs and objectives.
              we have the skills and expertise to deliver a high-quality website that is optimized for speed, security, and user experience.
             </p>
-               <button className='md:mx-0 text-white font-bold hover: cursor-pointer rounded w-[200px] bg-black py-2 px-5 my-6 mx-auto '>Get Started</button>
+               <button onClick={() => {setGoToContact(true)}} className='md:mx-0 text-white font-bold hover: cursor-pointer rounded w-[200px] bg-black py-2 px-5 my-6 mx-auto '>Get Started</button>
 
         </div>
         </div>
