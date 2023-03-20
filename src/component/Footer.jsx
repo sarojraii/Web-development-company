@@ -16,10 +16,10 @@ export default function Footer() {
              Our team of experienced developers can help you create a custom website that meets your unique needs and objectives.
         </p>
         <div className='text-white flex justify-between md:w-[75%] my-6'>
-            <FaFacebookSquare  size={30}/>
-            <FaInstagram  size={30}/>
-            <FaGithubSquare  size={30}/>
-            <FaTwitterSquare  size={30}/>
+            <FaFacebookSquare className='cursor-pointer' size={30}/>
+            <FaInstagram className='cursor-pointer' size={30}/>
+            <FaGithubSquare className='cursor-pointer' size={30}/>
+            <FaTwitterSquare className='cursor-pointer' size={30}/>
         </div>
         </div>
         <div className='lg:col-span-2 text-white flex justify-between mt-6'>
