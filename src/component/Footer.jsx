@@ -36,7 +36,7 @@ export default function Footer() {
                 <ul>
                     <li className='py-2 text-sm'>Web Development</li>
                     <li className='py-2 text-sm'>Mobile Development</li>
-                    <li className='py-2 text-sm'>Word Press</li>
+                    <li className='py-2 text-sm'>QA</li>
                 </ul>
             </div>
             <div>
